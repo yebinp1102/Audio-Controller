@@ -10,40 +10,9 @@
   --link_color: navy;
 }
 
-
-/* :root{
-  --body_background: #fff;
-  --body_color: #000;
-  --link_color: navy;
-}
-
-[data-theme="dark"] {
-  --body_background: #282c34;
-  --body_color: #fff;
-  --link_color: cyan;
-} */
-
-
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
-}
-
-.for_light_theme {
-  --primary-color: #302ae6;
-  --secondary-color: #536390;
-  --font-color: #424242;
-  --bg-color: #fff;
-  --heading-color: #292922;
-}
-
-.for_dark_theme {
-  --primary-color: #9a97f3;
-  --secondary-color: #818cab;
-  --font-color: #e1e1ff;
-  --bg-color: #161625;
-  --heading-color: #818cab;
+  transition: all 0.2s ease-in-out;
 }
