@@ -1,5 +1,6 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import styled from 'styled-components'; 
+import AudioPlayer from '../components/AudioPlayer';
 
 
 // #region --- css -----
@@ -15,9 +16,7 @@ const HomePage = () => {
 
   return (
     <HomePageWrap>
-      <h1>Audio Controller</h1>
-      <br/>
-      <p>Dark mode theme botton test</p>
+      <AudioPlayer />
     </HomePageWrap>
   )
 }

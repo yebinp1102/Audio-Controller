@@ -1,17 +1,16 @@
-import { useState } from "react";
-import styled from "styled-components";
-import { ThemeContext } from "./context/ThemeContext";
 import HomePage from "./pages/HomePage";
 import DarkModeBtn from "./components/DarkModeBtn";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
-  const [isDark, setIsDark] = useState(false);
 
   return (
-    <ThemeContext.Provider value={{isDark, setIsDark}}>
-      <HomePage />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+      </Routes>
       <DarkModeBtn />
-    </ThemeContext.Provider>
+    </BrowserRouter>
   );
 }
 
